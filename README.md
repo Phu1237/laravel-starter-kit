@@ -7,6 +7,7 @@ Laravel Starter Kit is a simple starter kit with necessary packages for every la
 ## Installed packages
 - [laravel/laravel](https://github.com/laravel/laravel) [8.24.0]
 - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) [dev] [3.5.2]
+- [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) [dev] [2.9.0]
 
 ## About Laravel
 
