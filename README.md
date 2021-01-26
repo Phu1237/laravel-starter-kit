@@ -9,6 +9,57 @@ Laravel Starter Kit is a simple starter kit with necessary packages for every la
 - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) [dev] [3.5.2]
 - [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) [dev] [2.9.0]
 
+## How to use
+- Clone this repo or Click on [Use this template](https://github.com/Phu1237/laravel-starter-kit/generate) button then wait for it to complete fork this template to your repo.
+- Rename **.env.example** to **.env** and fill in your information.
+- Install composer dependencies:
+```bash
+composer install
+```
+- (Optional) Update composer dependencies:
+```bash
+composer update
+```
+- Set the application key:
+```bash
+php artisan key:generate
+```
+- Run the database migrations:
+```bash
+php artisan migrate
+```
+- Seed the database with records:
+```bash
+php artisan db:seed
+```
+- Serve the application on the PHP development server:
+```bash
+php artisan serve
+```
+- After that, go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to see your application.
+
+**Notes:**
+- If you don't update composer dependencies, run the commands below:
+```bash
+php artisan ide-helper:generate
+php artisan ide-helper:models --nowrite
+php artisan ide-helper:meta
+```
+
+## How to update
+- First, set this repo as your upstream repo by running the command below:
+```bash
+composer run kit:install
+```
+- Run the command below and merge your changes with the new update:
+```bash
+composer run kit:update
+```
+- If you want to remove this repo from your repo, run the command below:
+```bash
+composer run kit:uninstall
+```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
