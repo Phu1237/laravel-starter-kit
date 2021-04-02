@@ -5,9 +5,10 @@
 Laravel Starter Kit is a simple starter kit with necessary packages for every laravel project.
 
 ## Installed packages
-- [laravel/laravel](https://github.com/laravel/laravel) [8.24.0]
+- [laravel/laravel](https://github.com/laravel/laravel) [8.35.1]
 - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) [dev] [3.5.2]
-- [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) [dev] [2.9.0]
+- [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) [dev] [2.9.2]
+- [phu1237/laravel-settings](https://github.com/Phu1237/laravel-settings) [1.0.0]
 
 ## How to use
 - Clone this repo or Click on [Use this template](https://github.com/Phu1237/laravel-starter-kit/generate) button then wait for it to complete fork this template to your repo.
@@ -39,10 +40,12 @@ php artisan serve
 - After that, go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to see your application.
 
 **Notes:**
-- If you don't update composer dependencies, run the commands below:
+- If you don't update composer dependencies, run the commands below  to generate ide-helper files:
 ```bash
 php artisan ide-helper:generate
+
 php artisan ide-helper:models --nowrite
+
 php artisan ide-helper:meta
 ```
 
