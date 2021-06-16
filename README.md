@@ -6,10 +6,11 @@ Laravel Starter Kit is a simple starter kit with necessary packages for every la
 
 ## Installed packages
 
-- [laravel/laravel](https://github.com/laravel/laravel) [8.46.0]
+- [laravel/laravel](https://github.com/laravel/laravel) [8.47.0]
 - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) [dev] [3.6.1]
 - [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) [dev] [2.10.0]
-- [phu1237/laravel-settings](https://github.com/Phu1237/laravel-settings) [1.0.0]
+- [phu1237/laravel-tailwind-auth](https://github.com/Phu1237/laravel-tailwind-auth) [dev] [1.0.2]
+- [phu1237/laravel-settings](https://github.com/Phu1237/laravel-settings) [1.1.0]
 
 ## How to use
 
@@ -37,6 +38,12 @@ php artisan migrate
 
 ```bash
 php artisan db:seed
+```
+
+- Install authentication:
+
+```bash
+php artisan auth:install
 ```
 
 - Serve the application on the PHP development server:
