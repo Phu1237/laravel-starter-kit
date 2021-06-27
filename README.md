@@ -6,11 +6,14 @@ Laravel Starter Kit is a simple starter kit with necessary packages for every la
 
 ## Installed packages
 
-- [laravel/laravel](https://github.com/laravel/laravel) [8.47.0]
-- [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) [dev] [3.6.1]
-- [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) [dev] [2.10.0]
-- [phu1237/laravel-tailwind-auth](https://github.com/Phu1237/laravel-tailwind-auth) [dev] [1.0.2]
-- [phu1237/laravel-settings](https://github.com/Phu1237/laravel-settings) [1.1.0]
+- Composer:
+  - [laravel/laravel](https://github.com/laravel/laravel) [8.48.2]
+  - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) [dev] [3.6.2]
+  - [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) [dev] [2.10.0]
+  - [phu1237/laravel-tailwind-auth](https://github.com/Phu1237/laravel-tailwind-auth) [dev] [1.0.2]
+  - [phu1237/laravel-settings](https://github.com/Phu1237/laravel-settings) [1.1.0]
+- Npm / Yarn:
+  - [laravel-mix-blade-reload](https://laravel-mix.com/extensions/blade-reload)
 
 ## How to use
 
@@ -20,6 +23,12 @@ Laravel Starter Kit is a simple starter kit with necessary packages for every la
 
 ```bash
 composer install
+```
+
+- Install composer dependencies:
+
+```bash
+npm install
 ```
 
 - Set the application key:
@@ -52,7 +61,13 @@ php artisan auth:install
 php artisan serve
 ```
 
-- After that, go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to see your application.
+After that, go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to see your application.
+
+- Watch blade changes and reload with "laravel-mix-blade-reload"
+
+```bash
+npm run hot
+```
 
 **Notes:**
 
