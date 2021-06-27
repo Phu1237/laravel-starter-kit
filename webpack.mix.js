@@ -13,7 +13,13 @@ require('laravel-mix-blade-reload');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .bladeReload()
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
+
+if (mix.inProduction()) {
+    mix.version();
+} else {
+    mix.bladeReload();
+    mix.sourceMaps();
+}
