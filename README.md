@@ -71,14 +71,14 @@ npm run hot
 
 **Notes:**
 
-- If you don't update composer dependencies, run the commands below  to generate ide-helper files:
+- Run the commands below  to generate ide-helper files:
 
 ```bash
 php artisan ide-helper:generate
-
 php artisan ide-helper:models --nowrite
-
 php artisan ide-helper:meta
+# or
+composer run dump-ide
 ```
 
 ## How to update
