@@ -3,7 +3,7 @@ name: composer update
 on:
   schedule:
     - cron: '0 0 * * *' #UTC
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   composer_update_job:
