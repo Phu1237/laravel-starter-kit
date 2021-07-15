@@ -7,7 +7,7 @@ Laravel Starter Kit is a simple starter kit with necessary packages for every la
 ## Installed packages
 
 - Composer:
-  - [laravel/laravel](https://github.com/laravel/laravel) [8.49.0]
+  - [laravel/laravel](https://github.com/laravel/laravel) [8.50.0]
   - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) [dev] [3.6.2]
   - [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) [dev] [2.10.0]
   - [phu1237/laravel-tailwind-auth](https://github.com/Phu1237/laravel-tailwind-auth) [dev] [1.0.2]
