@@ -81,7 +81,7 @@
         ],
         "kit:update": [
             "git fetch upstream",
-            "git merge upstream/master"
+            "git merge upstream/master --allow-unrelated-histories"
         ],
         "kit:uninstall": [
             "git remote remove upstream"
