@@ -10,6 +10,7 @@ Laravel Starter Kit is a simple starter kit with necessary packages for every la
   - [laravel/laravel](https://github.com/laravel/laravel) [9.x.x]
   - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) [dev] [3.x.x]
   - [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) [dev] [2.x.x]
+  - [phu1237/laravel-settings](https://github.com/Phu1237/laravel-settings) [1.x.x]
 - Npm / Yarn:
   - [Nothing here yet]
 
@@ -41,12 +42,6 @@ php artisan key:generate
 php artisan migrate
 ```
 
-- **(Optional)** Seed the database with records:
-
-```bash
-php artisan db:seed
-```
-
 - Serve the application on the PHP development server:
 
 ```bash
@@ -55,31 +50,45 @@ php artisan serve
 
 After that, go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to see your application.
 
-## Useful
+### Useful commands
 
-- Configurations:
-  - DEBUGBAR_ENABLED: Enable or disable debugbar manual (dev)
-  - DB_DATABASE: Database name
-  - DB_USERNAME: Database username
-  - DB_PASSWORD: Database password
+- Install authentication:
 
-- Commands to generate ide-helper files:
+```shell
+php artisan auth:install
+```
+
+- Seed the database with records:
+
+```bash
+php artisan db:seed
+```
+
+- Generate ide helper files:
 
 ```bash
 composer dump-ide
 ```
 
-- Command to export laravel error blades
+- Export laravel error blades
 
 ```bash
 php artisan vendor:publish --tag=laravel-errors
 ```
 
-- Command to export laravel email blades
+- Export laravel email blades
 
 ```bash
 php artisan vendor:publish --tag=laravel-mail
 ```
+
+## Useful information
+
+- Environment's variables description:
+  - DEBUGBAR_ENABLED: Enable or disable debugbar manual (dev)
+  - DB_DATABASE: Database name
+  - DB_USERNAME: Database username
+  - DB_PASSWORD: Database password
 
 ## About Laravel
 
@@ -100,34 +109,6 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
 ## Security Vulnerabilities
 
