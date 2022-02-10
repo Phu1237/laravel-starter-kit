@@ -1,11 +1,85 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## About Laravel Starter Kit
+
+Laravel Starter Kit is a simple starter kit with necessary packages for every laravel project.
+
+## Installed dependencies
+
+- Composer:
+  - [laravel/laravel](https://github.com/laravel/laravel) [9.x.x]
+  - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) [dev] [3.x.x]
+  - [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) [dev] [2.x.x]
+- Npm / Yarn:
+  - [Nothing here yet]
+
+## How to use
+
+- Clone this repo or Click on [Use this template](https://github.com/Phu1237/laravel-starter-kit/generate) button then wait for the process to completely fork this template to your repo.
+- Rename **.env.example** to **.env** and fill in it with your information.
+- Install composer dependencies:
+
+```bash
+composer install
+```
+
+- Install composer dependencies:
+
+```bash
+npm install
+```
+
+- Set the application key:
+
+```bash
+php artisan key:generate
+```
+
+- Run the database migrations:
+
+```bash
+php artisan migrate
+```
+
+- **(Optional)** Seed the database with records:
+
+```bash
+php artisan db:seed
+```
+
+- Serve the application on the PHP development server:
+
+```bash
+php artisan serve
+```
+
+After that, go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to see your application.
+
+## Useful
+
+- Configurations:
+  - DEBUGBAR_ENABLED: Enable or disable debugbar manual (dev)
+  - DB_DATABASE: Database name
+  - DB_USERNAME: Database username
+  - DB_PASSWORD: Database password
+
+- Commands to generate ide-helper files:
+
+```bash
+composer dump-ide
+```
+
+- Command to export laravel error blades
+
+```bash
+php artisan vendor:publish --tag=laravel-errors
+```
+
+- Command to export laravel email blades
+
+```bash
+php artisan vendor:publish --tag=laravel-mail
+```
 
 ## About Laravel
 
