@@ -55,7 +55,7 @@ After that, go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to see your app
 
 - Install authentication:
 
-```shell
+```bash
 php artisan auth:install
 ```
 
@@ -81,6 +81,26 @@ php artisan vendor:publish --tag=laravel-errors
 
 ```bash
 php artisan vendor:publish --tag=laravel-mail
+```
+
+## How to update
+
+- First, set this repo as your upstream repo by running the command below:
+
+```bash
+composer run kit:install
+```
+
+- Run the command below and merge your changes with the new update:
+
+```bash
+composer run kit:update
+```
+
+- If you want to remove this repo from your repo, run the command below:
+
+```bash
+composer run kit:uninstall
 ```
 
 ## Useful information

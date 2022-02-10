@@ -57,6 +57,16 @@
             "@php artisan ide-helper:models --nowrite",
             "@php artisan ide-helper:meta",
             "@php artisan optimize"
+        ],
+        "kit:install": [
+            "git remote add upstream https://github.com/Phu1237/laravel-starter-kit"
+        ],
+        "kit:update": [
+            "git fetch upstream",
+            "git merge upstream/master --allow-unrelated-histories --squash"
+        ],
+        "kit:uninstall": [
+            "git remote remove upstream"
         ]
     },
     "extra": {
