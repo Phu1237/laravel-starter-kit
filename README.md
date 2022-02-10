@@ -11,6 +11,7 @@ Laravel Starter Kit is a simple starter kit with necessary packages for every la
   - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) [dev] [3.x.x]
   - [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) [dev] [2.x.x]
   - [phu1237/laravel-settings](https://github.com/Phu1237/laravel-settings) [1.x.x]
+  - [phu1237/laravel-tailwind-auth](https://github.com/Phu1237/laravel-tailwind-auth) [1.x.x]
 - Npm / Yarn:
   - [Nothing here yet]
 
