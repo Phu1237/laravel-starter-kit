@@ -13,7 +13,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
     }
 
     /**
@@ -23,6 +22,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Fix some bugs with migration
+        \Illuminate\Support\Facades\Schema::defaultStringLength(191);
     }
 }
