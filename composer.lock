@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0696e708bc3373b500372f47f260ddc4",
+    "content-hash": "13dc9e7e1ddfbfd3a1e7722bff90e8fc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2128,6 +2128,60 @@
                 }
             ],
             "time": "2021-12-04T23:24:31+00:00"
+        },
+        {
+            "name": "phu1237/laravel-settings",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Phu1237/laravel-settings.git",
+                "reference": "1d3333ab8ef968e1cd8571807413b42b590f0792"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Phu1237/laravel-settings/zipball/1d3333ab8ef968e1cd8571807413b42b590f0792",
+                "reference": "1d3333ab8ef968e1cd8571807413b42b590f0792",
+                "shasum": ""
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Phu1237\\LaravelSettings\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Setting": "Phu1237\\LaravelSettings\\Facades\\Setting"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Phu1237\\LaravelSettings\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phu1237",
+                    "email": "phu1237@gmail.com"
+                }
+            ],
+            "description": "Laravel Settings",
+            "support": {
+                "issues": "https://github.com/Phu1237/laravel-settings/issues",
+                "source": "https://github.com/Phu1237/laravel-settings/tree/1.1.2"
+            },
+            "time": "2022-01-30T15:30:08+00:00"
         },
         {
             "name": "psr/container",
