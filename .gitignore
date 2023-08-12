@@ -17,3 +17,12 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+# cache
+/bootstrap/cache/*.php
+/bootstrap/cache/*.tmp
+# laravel-mix
+/public/mix-manifest.json
+# laravel-ide-helper
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
